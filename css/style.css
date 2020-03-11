@@ -1,0 +1,205 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+}
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #555555;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	background-color: #222222;
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.16);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 7%;
+}
+
+header .hamburger button {
+	font-size: 30px;
+	color: #fff;
+	background: none;
+	border: none;
+}
+
+header .anlik-vaka p {
+	color: #fff;
+	font-size: 22px;
+}
+
+header .anlik-vaka p > span {
+	color: #FFAA00;
+	font-weight: bold;
+	font-size: 30px;
+	margin-left: 5px;
+}
+
+
+.data-box {
+	width: 90%;
+	height: 100px;
+	background-color: #222222;
+	border-radius: 4px;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.data-box .left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-right: 1px solid #ddd;
+	flex: 1;
+}
+
+.data-box .left p {
+	color: #ddd;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.data-box .left span {
+	font-size: 28px;
+	font-weight: 600;
+	color: #e60000;
+	margin-top: 10px;
+}
+
+.data-box .right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+}
+
+.data-box .right p {
+	color: #ddd;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.data-box .right span {
+	font-size: 28px;
+	font-weight: 600;
+	color: #70A800;
+	margin-top: 10px;
+}
+
+
+.ulkeler-genel {
+	width: 90%;
+	height: auto;
+	background-color: #222222;
+	border-radius: 4px;
+	margin: 0 auto;
+}
+
+.ulkeler-genel h3 {
+	color: #ddd;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+	width: 90%;
+}
+
+.ulkeler-genel .ulkeler {
+	width: 90%;
+	height: auto;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.ulkeler-genel .ulkeler .ulke {
+	overflow: hidden;
+	border-bottom: 1px solid #444;
+	height: 48px;
+}
+
+.ulkeler-genel .ulkeler .ulke .ulke-detay {
+
+	padding: 10px 6px 10px 6px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+	display: flex;
+}
+
+.ulkeler-genel .ulkeler .ulke .ulke-detay > span {
+	color: #e60000;
+	font-weight: 600;
+	font-size: 22px;
+	margin-right: 10px;
+	min-width: 72px;
+}
+
+.ulkeler-genel .ulkeler .ulke .ulke-detay > button {
+	background-color: #444;
+	border-radius: 4px;
+	border: none;
+	color: #999;
+	width: 80px;
+	height: 25px;
+	font-size: 15px;
+	font-weight: 600;
+	margin-left: auto;
+}
+
+.height {
+	height: 120px !important;
+}
+
+.detaylar {
+	display: flex;
+	height: 60px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.detaylar p:last-child {
+	width: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	background-color: #70A800;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.detaylar p:last-child > span {
+	color: #fff;
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+.detaylar p:first-child {
+	width: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	background-color: #e60000;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.detaylar p:first-child > span {
+	color: #fff;
+	font-size: 18px;
+	margin-left: 5px;
+}

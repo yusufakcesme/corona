@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>corona</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<!--<div class="hamburger">
+			<button><i class="fa fa-bars"></i></button>
+		</div>-->
+		<div class="anlik-vaka">
+			<p>Toplam Vaka: <span>121.564</span></p>
+		</div>
+	</header>
+
+	<div class="data-box">
+		<div class="left">
+			<p>Ölen Sayısı</p>
+			<span>4.373</span>
+		</div>
+
+		<div class="right">
+			<p>İyileşen Sayısı</p>
+			<span>66.239</span>
+		</div>
+	</div>
+
+
+	<div class="ulkeler-genel">
+		<h3>Kesinleşen Vakalar</h3>
+		<div class="ulkeler">
+
+			<div class="ulke" href="#">
+				<div class="ulke-detay">
+					<span>80.921</span>Çin <button onclick="detaylar(this)">detaylar</button>
+				</div>
+				<div class="detaylar">
+					<p>Ölüm: <span> 3.161</span></p>
+					<p>İyileşen: <span> 61.639</span></p>
+				</div>
+			</div>
+			
+			<div class="ulke" href="#">
+				<div class="ulke-detay">
+					<span>80.921</span>Çin <button onclick="detaylar(this)">detaylar</button>
+				</div>
+				<div class="detaylar">
+					<p>Ölüm: <span> 3.161</span></p>
+					<p>İyileşen: <span> 61.639</span></p>
+				</div>
+			</div>
+
+			<div class="ulke" href="#">
+				<div class="ulke-detay">
+					<span>80.921</span>Çin <button onclick="detaylar(this)">detaylar</button>
+				</div>
+				<div class="detaylar">
+					<p>Ölüm: <span> 3.161</span></p>
+					<p>İyileşen: <span> 61.639</span></p>
+				</div>
+			</div>
+
+			<div class="ulke" href="#">
+				<div class="ulke-detay">
+					<span>80.921</span>Çin <button onclick="detaylar(this)">detaylar</button>
+				</div>
+				<div class="detaylar">
+					<p>Ölüm: <span> 3.161</span></p>
+					<p>İyileşen: <span> 61.639</span></p>
+				</div>
+			</div>
+
+			<div class="ulke" href="#">
+				<div class="ulke-detay">
+					<span>80.921</span>Çin <button onclick="detaylar(this)">detaylar</button>
+				</div>
+				<div class="detaylar">
+					<p>Ölüm: <span> 3.161</span></p>
+					<p>İyileşen: <span> 61.639</span></p>
+				</div>
+			</div>
+
+			<div class="ulke" href="#">
+				<div class="ulke-detay">
+					<span>80.921</span>Çin <button onclick="detaylar(this)">detaylar</button>
+				</div>
+				<div class="detaylar">
+					<p>Ölüm: <span> 3.161</span></p>
+					<p>İyileşen: <span> 61.639</span></p>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		function detaylar(n) {
+			var item = n.parentNode.parentNode;
+			if (item.style.height === "120px") {
+				item.style.height = "48px";
+			} else {
+				item.style.height = "120px";
+			}
+		}
+	</script>
+
+</body>
+</html>
