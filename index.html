@@ -11,13 +11,27 @@
 <body>
 
 	<header>
-		<!--<div class="hamburger">
+		<div onclick="openMenu()" class="hamburger">
 			<button><i class="fa fa-bars"></i></button>
-		</div>-->
+		</div>
 		<div class="anlik-vaka">
 			<p>Toplam Vaka: <span>121.564</span></p>
 		</div>
 	</header>
+
+	<div id="menu" class="mobile-menu">
+		<div onclick="closeMenu()" class="close">
+			<p>Corona App</p>
+			<i class="fa fa-times"></i>
+		</div>
+		<div class="kategoriler">
+			<a href="single.html"> <i class="fa fa-chevron-right"></i> Virüs Hakkında</a>
+			<a href="single.html"> <i class="fa fa-chevron-right"></i> Virüsten Korunma</a>
+		</div>
+
+		<p> &copy; 2020. Tüm hakları saklıdır.</p>
+
+	</div>
 
 	<div class="data-box">
 		<div class="left">
@@ -96,8 +110,6 @@
 				</div>
 			</div>
 
-
-
 		</div>
 	</div>
 
@@ -111,6 +123,22 @@
 				item.style.height = "120px";
 			}
 		}
+
+
+		function openMenu() {
+			var menu = document.getElementById('menu');
+			menu.style.transform = "translateX(0%)";
+		}
+
+
+		function closeMenu() {
+			var menu = document.getElementById('menu');
+			menu.style.transform = "translateX(-100%)";
+		}
+
+
+
+
 	</script>
 
 </body>

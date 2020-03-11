@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>corona</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<div onclick="openMenu()" class="hamburger">
+			<button><i class="fa fa-bars"></i></button>
+		</div>
+		<div class="anlik-vaka">
+			<p>Toplam Vaka: <span>121.564</span></p>
+		</div>
+	</header>
+
+	<div id="menu" class="mobile-menu">
+		<div onclick="closeMenu()" class="close">
+			<p>Corona App</p>
+			<i class="fa fa-times"></i>
+		</div>
+		<div class="kategoriler">
+			<a href="single.html"> <i class="fa fa-chevron-right"></i> Virüs Hakkında</a>
+			<a href="single.html"> <i class="fa fa-chevron-right"></i> Virüsten Korunma</a>
+		</div>
+
+		<p> &copy; 2020. Tüm hakları saklıdır.</p>
+
+	</div>
+
+
+
+	<div style="margin-top: 30px; padding-bottom: 30px;" class="ulkeler-genel">
+		<h3>Virüs Hakkında</h3>
+		<div class="ulkeler">
+			<img style="width: 100%;" src="https://www.atlasdergisi.com/wp-content/uploads/2020/03/CoronaVir%C3%BCs1.jpg">
+			<p style="color: #fbfbfb;font-weight:400;margin: 10px 0;">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		function detaylar(n) {
+			var item = n.parentNode.parentNode;
+			if (item.style.height === "120px") {
+				item.style.height = "48px";
+			} else {
+				item.style.height = "120px";
+			}
+		}
+
+
+		function openMenu() {
+			var menu = document.getElementById('menu');
+			menu.style.transform = "translateX(0%)";
+		}
+
+
+		function closeMenu() {
+			var menu = document.getElementById('menu');
+			menu.style.transform = "translateX(-100%)";
+		}
+
+
+
+
+	</script>
+
+</body>
+</html>
